@@ -4,8 +4,8 @@ import LeftZone from '../components/LeftZone/index.vue'
 
 <template>
   <div className="editor-wrapper" bg-gray-50 h-100vh>
-    <div className="editor-header text-center p-2">
-      顶部工具栏
+    <div className="editor-header p-2">
+      <headerZone />
     </div>
     <div className="editor-main flex justify-between items-start">
       <div className="editor-left w-30vw">
