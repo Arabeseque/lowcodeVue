@@ -9,10 +9,10 @@ declare module '@vue/runtime-core' {
   export interface GlobalComponents {
     CompDom: typeof import('./src/components/mainZone/components/compDom.vue')['default']
     ComponentData: typeof import('./src/components/LeftZone/components/componentData.vue')['default']
-    Footer: typeof import('./src/components/Footer.vue')['default']
     HeaderZone: typeof import('./src/components/headerZone/index.vue')['default']
     LeftZone: typeof import('./src/components/LeftZone/index.vue')['default']
     MainZone: typeof import('./src/components/mainZone/index.vue')['default']
+    Point: typeof import('./src/components/mainZone/components/point.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
   }

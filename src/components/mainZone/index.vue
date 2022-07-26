@@ -21,13 +21,22 @@ function drop(evt: any) {
   evt.preventDefault()
 }
 // 鼠标进入
-function mouseOver(evt: any, index: any) {
+function mouseOver(evt: any, index: number) {
   main.hoverCompIndex = index
   evt.preventDefault()
 }
 // 鼠标离开
 function mouseOut(evt: any) {
   main.hoverCompIndex = -1
+  evt.preventDefault()
+}
+// 按下鼠标
+function mouseDown(evt: any, index: number) {
+  // 元素操作
+  main.toggleComp(index)
+  // 辅助线逻辑
+
+  // 选中框逻辑
   evt.preventDefault()
 }
 </script>
@@ -50,6 +59,7 @@ function mouseOut(evt: any) {
         :style="{ ...contResetCss(item.cssModule), 'z-index': index }"
         @mouseover="mouseOver($event, index)"
         @mouseout="mouseOut"
+        @mousedown="mouseDown($event, index)"
       >
         <comp-dom :item="item" />
       </point>
