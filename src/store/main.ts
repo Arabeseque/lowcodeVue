@@ -9,8 +9,7 @@ export const useMain = defineStore('main', {
       pageHeight: 650, // 页面高度
       template: [] as baseComponent[], // 组件数组
       moveIndex: 0, // 当前拖动类型 1-8 坐标点 9 底部高度条 10 按住元素
-      hoverCompIndex: -1, //
-      acIdx: [] as number[], //
+      acIdx: [] as number[], // 选中的页面组件
       lockCompId: [] as string[], // 锁住的元素id
       isCtrl: false, // 当前是否按下ctrl键
     }
@@ -50,6 +49,17 @@ export const useMain = defineStore('main', {
       if (index === 0)
         this.moveIndex = 0
     },
+    toggleComp(index: number) {
+      // 按住ctrl就是多选
+      if (this.isCtrl) {
+        if (!this.acIdx.includes(index))
+          this.acIdx.push(index)
+      }
+      else {
+        this.acIdx = [index]
+      }
+    },
+
   },
 })
 
