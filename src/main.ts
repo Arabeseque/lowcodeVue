@@ -7,6 +7,7 @@ import App from './App.vue'
 import '@unocss/reset/tailwind.css'
 import './styles/main.css'
 import 'uno.css'
+import ydH5 from 'ydh5-ui'
 
 const app = createApp(App)
 const router = createRouter({
@@ -20,4 +21,5 @@ const pinia = createPinia()
 
 app.use(router)
 app.use(pinia)
+app.use(ydH5)
 app.mount('#app')
