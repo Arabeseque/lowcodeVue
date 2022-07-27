@@ -148,21 +148,6 @@ function baseComList(name: string, tempLen: any) {
 }
 
 /**
- * 动画基类
- * @returns
- */
-function baseAnimation() {
-  return {
-    animationName: '',
-    animationDuration: 1000, // 动画时间
-    animationDelay: 0, // 延迟时间
-    animationIterationCount: 1, // 动画执行次数
-    animationFillMode: 'both', // 动画前后阶段都生效
-    animationTimingFunction: 'ease', // 动画曲线
-  }
-}
-
-/**
  * 统一内外边距封装
  * @returns
  */
@@ -233,4 +218,4 @@ function compSize(width: any, height: any) {
   }
 }
 
-export { baseComponent, baseComList, baseAnimation, baseSwiper }
+export { baseComponent, baseComList, baseSwiper }

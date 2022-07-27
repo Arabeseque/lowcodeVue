@@ -10,7 +10,6 @@
     "test": "vitest"
   },
   "dependencies": {
-    "@element-plus/icons-vue": "^2.0.6",
     "@iconify/json": "^2.1.81",
     "@vueuse/core": "^8.9.2",
     "element-plus": "^2.2.10",

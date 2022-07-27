@@ -34,7 +34,6 @@ function dragstart(event: DragEvent, name: string) {
 </script>
 
 <template>
-  <div>Test</div>
   <div class="component_list flex flex-wrap">
     <div
       v-for="item in baseComp"
