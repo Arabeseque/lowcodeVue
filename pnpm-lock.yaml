@@ -2,7 +2,6 @@ lockfileVersion: 5.4
 
 specifiers:
   '@antfu/eslint-config': ^0.25.2
-  '@element-plus/icons-vue': ^2.0.6
   '@iconify-json/carbon': ^1.1.6
   '@iconify/json': ^2.1.81
   '@types/node': ^18.0.3
@@ -29,7 +28,6 @@ specifiers:
   ydh5-ui: ^0.0.26
 
 dependencies:
-  '@element-plus/icons-vue': 2.0.6_vue@3.2.37
   '@iconify/json': 2.1.81
   '@vueuse/core': 8.9.2_vue@3.2.37
   element-plus: 2.2.10_vue@3.2.37
